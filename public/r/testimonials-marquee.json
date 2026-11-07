@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "testimonials-marquee",
+  "title": "Testimonials Marquee",
+  "author": "anujdataworld <anujintech@gmail.com>",
+  "description": "Scrolling marquee to showcase user testimonials.",
+  "registryDependencies": [
+    "@kibo-ui/marquee",
+    "https://anujsinghwp.netlify.app/r/testimonial.json"
+  ],
+  "files": [],
+  "categories": [
+    "marketing"
+  ],
+  "type": "registry:component"
+}
