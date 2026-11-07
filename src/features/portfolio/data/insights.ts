@@ -52,6 +52,14 @@ async function fetchOverview(
   range?: DateRange
 ): Promise<OverviewResponse | null> {
   try {
+    if (
+      !process.env.OPENPANEL_PROJECT_ID ||
+      !process.env.OPENPANEL_CLIENT_ID ||
+      !process.env.OPENPANEL_CLIENT_SECRET
+    ) {
+      return null
+    }
+
     const url = new URL(
       `https://api.openpanel.dev/insights/${process.env.OPENPANEL_PROJECT_ID}/overview`
     )

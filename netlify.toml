@@ -3,3 +3,7 @@
 
 [build.environment]
   NODE_VERSION = "22"
+  NEXT_PUBLIC_APP_URL = "https://anujsinghwp.netlify.app"
+  NEXT_PUBLIC_REGISTRY_NAMESPACE = "@anujdataworld"
+  NEXT_PUBLIC_REGISTRY_NAMESPACE_URL = "https://anujsinghwp.netlify.app/r/{name}.json"
+  NEXT_PUBLIC_GITHUB_CONTRIBUTIONS_API_URL = "https://github-contributions-api.jogruber.de/v4"

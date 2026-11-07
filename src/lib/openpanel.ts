@@ -1,7 +1,9 @@
 import { OpenPanel } from "@openpanel/web"
 
 export const op = new OpenPanel({
-  clientId: process.env.NEXT_PUBLIC_OPENPANEL_CLIENT_ID!,
+  clientId: process.env.NEXT_PUBLIC_OPENPANEL_CLIENT_ID || "",
   trackScreenViews: true,
-  disabled: process.env.NODE_ENV !== "production",
+  disabled:
+    process.env.NODE_ENV !== "production" ||
+    !process.env.NEXT_PUBLIC_OPENPANEL_CLIENT_ID,
 })
